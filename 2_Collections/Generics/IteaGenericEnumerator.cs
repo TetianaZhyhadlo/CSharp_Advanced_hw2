@@ -20,7 +20,7 @@ namespace ITEA_Collections.Generics
         public void Dispose()
         {
             //Dispose(true);
-            //GC.SuppressFinalize(this);
+            GC.SuppressFinalize(this);
         }
 
         public bool MoveNext()

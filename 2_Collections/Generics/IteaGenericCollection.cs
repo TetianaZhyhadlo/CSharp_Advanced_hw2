@@ -6,7 +6,7 @@ namespace ITEA_Collections.Generics
 {
     public class IteaGenericCollection<T> : IEnumerable<T>, IBaseGenericCollectionUsing<T>
     {
-        private List<T> collection;
+        private List<T> collection;//?
 
         #region IBaseGenericCollectionUsing
         public void Add(T ts)

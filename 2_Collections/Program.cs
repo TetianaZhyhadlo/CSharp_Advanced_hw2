@@ -56,6 +56,7 @@ namespace ITEA_Collections
             IBaseGenericCollectionUsing<string> collectionUsing = new IteaGenericCollection<string>();
             string[] x = new string[] { "1", "2", "3" };
             BaseGenericUsingTest.Execute<string>(ref collectionUsing, x);
+            //
         }
 
         static void UseCollection(object[] objects)
