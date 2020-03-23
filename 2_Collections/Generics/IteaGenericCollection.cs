@@ -39,7 +39,7 @@ namespace ITEA_Collections.Generics
             {
                 Console.WriteLine(except.GetType().Name + except.Message);
                 Console.WriteLine($"there is no element with index: {index}", ConsoleColor.Red);
-                // return null;
+                // return null; // нельзя передать null в неизвестный тип
                 return collection[0];
             }
         }
@@ -49,7 +49,7 @@ namespace ITEA_Collections.Generics
             try
             {
                 collection.RemoveAt(index);
-                //collection[index] = null;
+                //collection[index] = null;// нельзя передать null в неизвестный тип
                 Console.WriteLine($"The element index {index} is removed.");
             }
             catch (ArgumentOutOfRangeException)
